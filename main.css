@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #0b0a0c;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #040305;
+    color: cyan;
+    font-weight: bold;
+}
+
+span {
+    color: #f9004d;
+    transition: .4s;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+header nav {
+    padding: 0;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: cyan;
+    padding: 37px 16px;
+}
+
+h1, h3, a, p {
+    transition: .4s;
+}
+
+header a:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+p:hover {
+    color: #f9004d;
+    transition: .4s;
+}
+
+header h2:hover {
+    transition: none;
+}
+
+header nav a:hover,
+#newsletter:hover {
+    background-color: rgba(255, 255, 255, 15%);
+    transition: .4s;
+}
+
+header a:hover span,
+h1:hover span,
+h2:hover span,
+h3:hover span,
+p:hover span {
+    color: cyan;
+    transition: .4s;
+}
+header form {
+    text-align: right;
+}
+
+#sub-form {
+    display: none;
+    position: absolute;
+    max-width: 1280px;
+    padding: 5px;
+    right: 16px;
+    top: 0;
+}
+
+#sub-form input {
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 15%);
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+#sub-form button,
+#contact button {
+    border: none;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 15%);
+    height: 100%;
+    color: #f9004d;
+    transition: .4s;
+}
+
+#sub-form button {
+    font-size: 14px;
+}
+
+#contact button {
+    font-size: 18px;
+}
+
+#sub-form button:hover,
+#contact button:hover {
+    background-color: rgba(255, 255, 255, 30%);
+    color: cyan;
+    transition: .4s;
+}
+
+main,
+footer {
+    color: cyan;
+    padding-top: 4px;
+    transition: .4s;
+}
+
+main .container {
+    position: relative;
+    padding: 16px;
+}
+
+main h1 {
+    font-size: 36px;
+    padding: 8px 0;
+}
+
+#about-me {
+    padding: 30vh 0;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.languages {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+}
+
+.languages img {
+    margin-left: 10vw;
+    height: 240px;
+    border-radius: 10px;
+}
+
+#contact {
+    margin-left: 10vw;
+    margin-right: 15vw;
+    display: flex;
+    min-height: 20vh;
+    align-items:flex-end
+}
+
+#contact > div {
+    display: flex;
+}
+
+#contact h2 {
+    margin-bottom: 16px;
+}
+
+#contact-form {
+    margin-left: 2vw;
+}
+
+#contact-form div {
+    margin: 8px;
+}
+
+#contact p,
+#contact-form span {
+    font-size: 18px;
+}
+
+#contact-form div input,
+#contact-form div textarea {
+    padding: 8px;
+    width: 20vw;
+    margin-top: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 15%);
+    color: white;
+}
+
+#contact-form div textarea {
+    height: 15vh;
+    resize: none;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .container p{
+    margin: 5vh 0;
+}

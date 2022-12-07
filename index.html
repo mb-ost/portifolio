@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB-OST</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+    <script>
+        
+        function showForm() {
+            var x = document.getElementById("sub-form");
+            if (x.style.display == "") {
+                x.style.display = "flex";
+            } else {
+                x.style.display = "";
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/index.html"><h2>Portifo<span>lio</span></h2></a>
+            <nav>
+                <ul>
+                    <li><a href="/" title="Home">Home</a></li>
+                    <li><a href="#about-me" title="About Me">About</a></li>
+                    <li><a href="#my-work" title="Services">My Work</a></li>
+                    <li><a href="#skills" title="Skills">Skills</a></li>
+                    <li><a href="#contact" title="Contact Me">Contact</a></li>
+                </ul>
+            </nav>
+            <a onclick="showForm()" title="Receber E-mail de Noticias e Promoções" id="newsletter">Newsletter</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div id="sub-form">
+                <form>
+                    <div>
+                        <input type="email" placeholder="E-Mail">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+            <section id="about-me">
+                <div class="title">
+                    <h3><span>Hello!</span> My Name is</h3>
+                    <h1>Mauro Benelli <span>Ost</span></h1>
+                    <h3>I'm a Web <span>Developer</span></h3>
+                </div>
+            </section>
+            <section id="my-work">
+
+            </section>
+            <section id="skills">
+                <div class="languages">
+                    <h2>I <span>work</span> with:</h2>
+                    <img src="./media/HTML-CSS-JS.png" alt="HTML, CSS amd Java Script logos">
+                </div>
+            </section>
+            <section id="contact">
+                <div>
+                    
+                <div class="title">
+                    <h2>Contact-<span>me</span></h2>
+                </div>
+                <div id="contact-form">
+                    <form action="#">
+                        <div id="name-div">
+                            <p>Na<span>me</span>: </p>
+                            <input type="text" id="name" placeholder="Jabes Bond" >
+                        </div>
+                        <div id="email-div">
+                            <p><span>E</span>-mail:</p>
+                            <input type="email" id="email" placeholder="bond@james.007">
+                        </div>
+                        <div id="message-div">
+                            <p>Mess<span>age</span>:</p>
+                            <textarea id="message" placeholder="H THYAPUP. ZOHRLU, UVA ZAPYYLK."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span></span>
+            <p> &copy; Mauro Benelli Ost - All rights reserved</p>
+            <span></span>
+        </div>
+        
+    </footer>
+</body>
+</html>
