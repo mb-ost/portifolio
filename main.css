@@ -29,9 +29,12 @@ span {
 
 header .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    height: 90px;
+    height: fit-content;
+    min-height: 90px;
+    background-color: #040305;
 }
 
 header nav {
@@ -39,8 +42,12 @@ header nav {
 }
 header nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
-    padding: 0;
+}
+header nav ul li {
+    width: max-content;
+    padding: 37px 16px;
 }
 
 header a {
@@ -159,7 +166,8 @@ main h1 {
 
 .languages img {
     margin-left: 10vw;
-    height: 240px;
+    width: 240px;
+    max-width: 40vw;
     border-radius: 10px;
 }
 
@@ -173,6 +181,7 @@ main h1 {
 
 #contact > div {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #contact h2 {
@@ -192,10 +201,14 @@ main h1 {
     font-size: 18px;
 }
 
+#contact .title {
+    width: max-content;
+}
+
 #contact-form div input,
 #contact-form div textarea {
     padding: 8px;
-    width: 20vw;
+    width: 45vw;
     margin-top: 8px;
     border: none;
     background-color: rgba(255, 255, 255, 15%);
